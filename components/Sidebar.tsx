@@ -4,28 +4,30 @@ import Image from "next/image";
 const MySidebar = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 350px;
+  width: 300px;
   height: 100%;
   background-color: var(--sidebar-bg);
 `;
 
 const AboutSection = styled.div`
-  border: 1px solid gray; // todo: remove
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   height: 400px;
+  padding: 0 20px 0 20px;
 `;
 
 const Name = styled.h1`
   color: var(--heading);
   font-size: 2.4rem;
+  font-weight: 300;
 `;
 
 const ImageWrapper = styled.div`
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 
   .image {
@@ -36,6 +38,7 @@ const ImageWrapper = styled.div`
 const About = styled.p`
   color: var(--text);
   font-size: 1.6rem;
+  text-align: center;
 `;
 
 const LinksSection = styled.div`
@@ -43,6 +46,7 @@ const LinksSection = styled.div`
   display: flex;
   flex-direction: column;
   height: 300px;
+  margin-top: 40px;
 `;
 
 export default function Sidebar() {

@@ -62,8 +62,7 @@ export default function Sidebar() {
           />
         </ImageWrapper>
         <About>
-          Hi, my name is Abel Zambrano and I’m a web developer that specializes
-          in front end technologies.
+          I’m a web developer that specializes in front end technologies.
         </About>
       </AboutSection>
       <LinksSection></LinksSection>

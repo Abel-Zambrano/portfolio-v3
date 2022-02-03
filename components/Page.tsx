@@ -18,7 +18,8 @@ const GlobalStyles = createGlobalStyle`
     body {
     padding: 0;
     margin: 0;
-    /* font-family: 'Mulish', sans-serif; */ // todo: change font
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
     }
     * {
     margin: 0;

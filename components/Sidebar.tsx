@@ -22,7 +22,7 @@ const AboutSection = styled.div`
 
 const Name = styled.h1`
   color: var(--heading);
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
 `;
 
@@ -39,8 +39,9 @@ const ImageWrapper = styled.div`
 
 const About = styled.p`
   color: var(--text);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
+  line-height: 20px;
 `;
 
 const LinksSection = styled.div`
@@ -83,7 +84,7 @@ const LinkList = styled.ul`
   justify-content: center;
   align-items: flex-start;
   text-transform: capitalize;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 40px;
   line-height: 40px;
 `;
@@ -91,6 +92,7 @@ const LinkList = styled.ul`
 const LinkItem = styled.li`
   list-style: none;
   color: var(--text);
+  margin-left: 16px;
 
   :hover {
     color: var(--heading);

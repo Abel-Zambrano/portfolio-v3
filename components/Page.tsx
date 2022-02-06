@@ -37,6 +37,15 @@ const MyPage = styled.div`
   height: 100vh;
 `;
 
+const PageColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: var(--page-bg);
+  overflow-x: hidden;
+`;
+
 type Props = {
   children: any;
 };
@@ -47,7 +56,7 @@ export default function Page({ children }: Props) {
       <GlobalStyles />
       <MyPage>
         <Sidebar />
-        {children}
+        <PageColumn>{children}</PageColumn>
       </MyPage>
     </>
   );

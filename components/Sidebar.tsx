@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import links from "../JS/links";
 
 const MySidebar = styled.div`
   display: flex;
@@ -42,11 +44,57 @@ const About = styled.p`
 `;
 
 const LinksSection = styled.div`
-  border: 1px solid gray; // todo: remove
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 300px;
   margin-top: 40px;
+`;
+
+const SocialLinks = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+
+    .linkedin {
+      font-size: 2rem;
+      color: var(--sidebar-bg);
+    }
+  }
+
+  .github {
+    font-size: 3.5rem;
+    color: var(--primary);
+  }
+`;
+
+const LinkList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-top: 40px;
+  line-height: 40px;
+`;
+
+const LinkItem = styled.li`
+  list-style: none;
+  color: var(--text);
+
+  :hover {
+    color: var(--heading);
+  }
 `;
 
 export default function Sidebar() {
@@ -69,7 +117,19 @@ export default function Sidebar() {
           I’m a web developer that specializes in front end technologies.
         </About>
       </AboutSection>
-      <LinksSection></LinksSection>
+      <LinksSection>
+        <SocialLinks>
+          <div className="icon-wrapper">
+            <FaLinkedinIn className="linkedin" />
+          </div>
+          <FaGithub className="github" />
+        </SocialLinks>
+        <LinkList>
+          {links.map(({ id, name, url }) => {
+            return <LinkItem>{name}</LinkItem>;
+          })}
+        </LinkList>
+      </LinksSection>
     </MySidebar>
   );
 }

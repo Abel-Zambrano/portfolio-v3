@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Title from "./Title";
 
 const MyContent = styled.div`
-  width: 80%;
+  width: 90%;
   height: 100%;
   border: 1px solid greenyellow; // todo: remove
 `;

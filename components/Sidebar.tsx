@@ -20,10 +20,8 @@ const AboutSection = styled.div`
   padding: 0 20px 0 20px;
 `;
 
-const Name = styled.h1`
+const Name = styled.h2`
   color: var(--heading);
-  font-size: 2rem;
-  font-weight: 300;
 `;
 
 const ImageWrapper = styled.div`
@@ -38,10 +36,7 @@ const ImageWrapper = styled.div`
 `;
 
 const About = styled.p`
-  color: var(--text);
-  font-size: 1.4rem;
   text-align: center;
-  line-height: 20px;
 `;
 
 const LinksSection = styled.div`

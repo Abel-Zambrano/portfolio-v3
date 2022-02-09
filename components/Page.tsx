@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
         --page-bg: #111A26;
         --text: #9B9797;
         --heading: #FFFFFF;
+        --black: #000000;
 
     }
     html {
@@ -28,6 +29,20 @@ const GlobalStyles = createGlobalStyle`
     *::before,
     *::after {
     box-sizing: inherit;
+    }
+    h1{
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: var(--heading);
+    }
+    h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    }
+    p {
+    color: var(--text);
+    font-size: 1.4rem;
+    line-height: 20px;
     }
 `;
 

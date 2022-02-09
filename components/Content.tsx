@@ -3,8 +3,7 @@ import Title from "./Title";
 
 const MyContent = styled.div`
   width: 90%;
-  height: 100%;
-  border: 1px solid greenyellow; // todo: remove
+  max-width: 1200px;
 `;
 
 type Props = {

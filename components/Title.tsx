@@ -7,6 +7,7 @@ const MyTitle = styled.h2`
   font-size: 2rem;
   font-weight: 300;
   padding: 14px;
+  height: 60px;
 `;
 
 type Props = {

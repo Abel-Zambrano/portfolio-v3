@@ -123,7 +123,7 @@ export default function Sidebar() {
         </SocialLinks>
         <LinkList>
           {links.map(({ id, name, url }) => {
-            return <LinkItem>{name}</LinkItem>;
+            return <LinkItem key={id}>{name}</LinkItem>;
           })}
         </LinkList>
       </LinksSection>

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Content from "./Content";
+import experienceList from "../JS/experienceList";
+import ExpCard from "./ExpCard";
 
 const MyExperience = styled.div`
   display: flex;
@@ -9,10 +11,47 @@ const MyExperience = styled.div`
   margin-top: 200px;
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export default function Experience() {
   return (
     <MyExperience>
-      <Content title="Experience">hello</Content>
+      <Content title="Experience">
+        <Wrapper>
+          {experienceList.map(
+            ({
+              id,
+              symbol,
+              company,
+              image,
+              location,
+              url,
+              github,
+              tech,
+              summary,
+            }) => {
+              return (
+                <ExpCard
+                  id={id}
+                  symbol={symbol}
+                  company={company}
+                  image={image}
+                  location={location}
+                  url={url}
+                  github={github}
+                  tech={tech}
+                  summary={summary}
+                />
+              );
+            }
+          )}
+        </Wrapper>
+      </Content>
     </MyExperience>
   );
 }

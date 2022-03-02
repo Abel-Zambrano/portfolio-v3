@@ -5,6 +5,6 @@
 
 module.exports = {
   images: {
-    domains: [`live.staticflickr.com`],
+    domains: [`live.staticflickr.com`, `res.cloudinary.com`],
   },
 };

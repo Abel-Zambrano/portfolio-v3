@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
         --primary: #00E600;
         --sidebar-bg: #182434;
         --page-bg: #111A26;
-        --text: #9B9797;
+        --text: #cdcbcb;
         --heading: #FFFFFF;
         --black: #000000;
 

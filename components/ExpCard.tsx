@@ -59,7 +59,7 @@ const City = styled.h2`
 
 const Summary = styled.p`
   background-color: var(--sidebar-bg);
-  max-width: 800px;
+  width: 788px;
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 10px 6px 10px 6px;

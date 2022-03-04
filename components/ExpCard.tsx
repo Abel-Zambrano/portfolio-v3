@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const MyExpCard = styled.div`
   margin-bottom: 200px;
@@ -77,7 +78,16 @@ const TechList = styled.li`
   }
 `;
 
-const WebLinks = styled.div``;
+const WebLinks = styled.div`
+  display: flex;
+  justify-content: flex-end;
+
+  .link {
+    font-size: 2rem;
+    color: var(--heading);
+    margin-left: 12px;
+  }
+`;
 
 type Props = {
   id: number;
@@ -116,8 +126,14 @@ export default function ExpCard({
         })}
       </TechList>
       <WebLinks>
-        {url}
-        {github}
+        <a className="link" href={url} target="_blank">
+          <FiExternalLink />
+        </a>
+        {github !== null ? (
+          <a className="link" href={github} target="_blank">
+            <FiGithub />
+          </a>
+        ) : null}
       </WebLinks>
     </MyExpCard>
   );

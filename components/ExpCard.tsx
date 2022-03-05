@@ -16,7 +16,7 @@ const Company = styled.h2`
       display: block;
       position: relative;
       min-width: 500px;
-      height: 1px;
+      height: 2px;
       background-color: var(--primary);
       top: -11px;
       margin-left: 110px;
@@ -28,7 +28,7 @@ const Company = styled.h2`
       display: block;
       position: relative;
       min-width: 500px;
-      height: 1px;
+      height: 2px;
       background-color: var(--primary);
       top: -11px;
       margin-left: 255px;
@@ -40,7 +40,7 @@ const Company = styled.h2`
       display: block;
       position: relative;
       min-width: 500px;
-      height: 1px;
+      height: 2px;
       background-color: var(--primary);
       top: -11px;
       margin-left: 200px;
@@ -70,6 +70,7 @@ const Summary = styled.p`
 const Contribution = styled.div`
   display: flex;
   margin-bottom: 20px;
+  margin-left: 20px;
   .right-arrow {
     display: flex;
     align-items: flex-start;

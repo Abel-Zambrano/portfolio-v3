@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiChevronRight } from "react-icons/fi";
+import SubHeading from "./SubHeading";
 
 const MyExpCard = styled.div`
   margin-bottom: 200px;
@@ -66,6 +67,18 @@ const Summary = styled.p`
   padding: 10px 6px 10px 6px;
 `;
 
+const Contribution = styled.div`
+  display: flex;
+  margin-bottom: 20px;
+  .right-arrow {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3px;
+    color: var(--primary);
+    margin-right: 10px;
+  }
+`;
+
 const TechList = styled.li`
   display: flex;
   justify-content: flex-end;
@@ -86,6 +99,9 @@ const WebLinks = styled.div`
     font-size: 2rem;
     color: var(--heading);
     margin-left: 12px;
+    :hover {
+      color: var(--primary);
+    }
   }
 `;
 
@@ -99,6 +115,7 @@ type Props = {
   github?: string | null;
   tech: string[];
   summary: string;
+  contributions: string[];
 };
 
 export default function ExpCard({
@@ -111,6 +128,7 @@ export default function ExpCard({
   github,
   tech,
   summary,
+  contributions,
 }: Props) {
   return (
     <MyExpCard key={id}>
@@ -119,18 +137,31 @@ export default function ExpCard({
         <Image className="my-image" src={image} width={800} height={500} />
       </ImageWrapper>
       <City>{location}</City>
-      <Summary>{summary}</Summary>
+      <Summary>
+        {summary}
+        <SubHeading text="What I did" />
+        {contributions.map((contribtution) => {
+          return (
+            <Contribution>
+              <div className="right-arrow">
+                <FiChevronRight />
+              </div>
+              <p>{contribtution}</p>
+            </Contribution>
+          );
+        })}
+      </Summary>
       <TechList>
         {tech.map((e) => {
           return <p className="tech">{e}</p>;
         })}
       </TechList>
       <WebLinks>
-        <a className="link" href={url} target="_blank">
+        <a className="link" href={url} title="visit website" target="_blank">
           <FiExternalLink />
         </a>
         {github !== null ? (
-          <a className="link" href={github} target="_blank">
+          <a className="link" href={github} title="see code" target="_blank">
             <FiGithub />
           </a>
         ) : null}

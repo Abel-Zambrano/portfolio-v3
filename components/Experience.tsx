@@ -34,6 +34,7 @@ export default function Experience() {
               github,
               tech,
               summary,
+              contributions,
             }) => {
               return (
                 <ExpCard
@@ -46,6 +47,7 @@ export default function Experience() {
                   github={github}
                   tech={tech}
                   summary={summary}
+                  contributions={contributions}
                 />
               );
             }

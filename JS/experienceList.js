@@ -11,6 +11,13 @@ const experienceList = [
     tech: ["JavaScript", "Jekyll", "Docker", "SASS", "HTML", "CSS"],
     summary:
       "Hack for LA is volunteer organization that builds digital products, programs and services with community partners and local government to address issues in the Los Angeles region.",
+    contributions: [
+      "Develop a JavaScript parser to update a search filter header with proper title. There was a conflict with parsed HTML attributes that had spaces and this saved time for redeveloping an entire dynamic page",
+      "Restructered website layout so that all pages have a fixed footer positioned to the bottom of the page and to have a consistent look for the page footer no matter the width of the page (all breakpoints)",
+      "Review Pull Requests and assure changes are correct and provide solutions",
+      "Convert Figma designs into pixel-perfect HTML and CSS",
+      "Improved website mobile view by making changes with SASS variables",
+    ],
   },
   {
     id: 2,
@@ -22,7 +29,15 @@ const experienceList = [
     url: "https://armyofvolunteers.org/",
     github: null,
     tech: ["Wordpress", "Elementor", "Google Forms", "HTML", "CSS"],
-    summary: "updating soon...",
+    summary:
+      "Army of Volunteers for Earth is non-profit organization that operates worldwide. Their mission is to combat climate change and develop a global marketing network for climate friendly products and technologies.",
+    contributions: [
+      "Improved website UI design by coding HTML and CSS edits to meet deadlines",
+      "Added Kanban for project tracking and agile development",
+      "Improved responsive web design for cross-browser compatibility",
+      "Communicate with the President of the organization and web team for website improvements and developing documentation for simple web edits for new users",
+      "Integrated SSL Certificate and tested for mixed content, fixed 100% of errors",
+    ],
   },
   {
     id: 3,
@@ -34,7 +49,14 @@ const experienceList = [
     url: "https://www.anjanitorialservice.com/",
     github: "https://github.com/Abel-Zambrano/an-janitorial-service",
     tech: ["React", "JavaScript", "EmailJS", "SASS", "HTML", "CSS"],
-    summary: "updating soon...",
+    summary:
+      "AN Janitorial Service is a private owned businees that services the San Francisco Bay Area region. They provide janitorial servies in the resedinetal and commerial sector.",
+    contributions: [
+      "Develop an email form using emailjs, emails are submitted directly to the owner.",
+      "Improved site speed performance by using and Gatsby Image component",
+      "Redeveloped website styling with best practice. Converted CSS to SASS to reduce 20% of front-end styling code",
+      "Created reusable code and used JavaScript to display content from arrays",
+    ],
   },
 ];
 

@@ -5,7 +5,6 @@ const MyGallery = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 200px;
 `;
 
 const Wrapper = styled.div`

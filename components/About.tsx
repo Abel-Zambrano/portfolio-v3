@@ -9,6 +9,7 @@ const MyAbout = styled.div`
   justify-content: center;
   width: 100%;
   height: 1000px;
+  margin-bottom: 200px;
 `;
 
 const MySummary = styled(Summary)`

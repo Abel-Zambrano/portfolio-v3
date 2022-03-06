@@ -38,6 +38,7 @@ export default function Experience() {
             }) => {
               return (
                 <ExpCard
+                  key={id}
                   id={id}
                   symbol={symbol}
                   company={company}

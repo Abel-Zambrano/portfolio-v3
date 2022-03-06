@@ -59,13 +59,15 @@ const City = styled.h2`
   margin: 20px 0 20px 0;
 `;
 
-const Summary = styled.p`
+const Summary = styled.div`
   background-color: var(--sidebar-bg);
-  width: 788px;
+  width: 800px;
   border-radius: 4px;
   margin-bottom: 20px;
-  padding: 10px 6px 10px 6px;
+  padding: 20px 10px 20px 10px;
 `;
+
+const About = styled.p``;
 
 const Contribution = styled.div`
   display: flex;
@@ -139,11 +141,11 @@ export default function ExpCard({
       </ImageWrapper>
       <City>{location}</City>
       <Summary>
-        {summary}
+        <About>{summary}</About>
         <SubHeading text="What I did" />
-        {contributions.map((contribtution) => {
+        {contributions.map((contribtution, i) => {
           return (
-            <Contribution>
+            <Contribution key={i}>
               <div className="right-arrow">
                 <FiChevronRight />
               </div>
@@ -153,8 +155,12 @@ export default function ExpCard({
         })}
       </Summary>
       <TechList>
-        {tech.map((e) => {
-          return <p className="tech">{e}</p>;
+        {tech.map((e, i) => {
+          return (
+            <p key={i} className="tech">
+              {e}
+            </p>
+          );
         })}
       </TechList>
       <WebLinks>

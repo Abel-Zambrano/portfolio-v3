@@ -12,7 +12,6 @@ const GlobalStyles = createGlobalStyle`
 
     }
     html {
-    box-sizing: border-box;
     font-size: 62.5%;
     /* scroll-behavior: smooth; */ // todo: remove if not needed
     }
@@ -23,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight:300;
     }
     * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     }

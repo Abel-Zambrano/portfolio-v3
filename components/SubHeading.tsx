@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const MySubHeading = styled.h2`
   border-left: 4px solid var(--primary);
+  color: var(--heading);
   padding-left: 20px;
   margin: 80px 0 20px 0;
 `;

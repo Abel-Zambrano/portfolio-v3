@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FiGithub, FiExternalLink, FiChevronRight } from "react-icons/fi";
 import SubHeading from "./SubHeading";
 
-const MyExpCard = styled.div`
+const MyCards = styled.div`
   margin-bottom: 200px;
 `;
 
@@ -44,6 +44,18 @@ const Company = styled.h2`
       background-color: var(--primary);
       top: -11px;
       margin-left: 200px;
+    }
+  }
+  &.toshi {
+    ::after {
+      content: "";
+      display: block;
+      position: relative;
+      min-width: 500px;
+      height: 2px;
+      background-color: var(--primary);
+      top: -11px;
+      margin-left: 100px;
     }
   }
 `;
@@ -121,7 +133,7 @@ type Props = {
   contributions: string[];
 };
 
-export default function ExpCard({
+export default function Cards({
   id,
   symbol,
   company,
@@ -134,7 +146,7 @@ export default function ExpCard({
   contributions,
 }: Props) {
   return (
-    <MyExpCard key={id}>
+    <MyCards key={id}>
       <Company className={symbol}>{company}</Company>
       <ImageWrapper>
         <Image className="my-image" src={image} width={800} height={500} />
@@ -173,6 +185,6 @@ export default function ExpCard({
           </a>
         ) : null}
       </WebLinks>
-    </MyExpCard>
+    </MyCards>
   );
 }

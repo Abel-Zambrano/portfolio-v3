@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import About from "../components/About";
-import Experience from "../components/Experience";
+import Gallery from "../components/Gallery";
 // import Head from "next/head";
 import Page from "../components/Page";
+import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +15,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <About />
-      <Experience />
+      <Gallery title="Experience">
+        <Experience />
+      </Gallery>
+      <Gallery title="Projects">
+        <Projects />
+      </Gallery>
     </Page>
   );
 };

@@ -1,10 +1,10 @@
-import experienceList from "../JS/experienceList";
+import projectsList from "../JS/projectsList";
 import Cards from "./Cards";
 
-export default function Experience() {
+export default function Projects() {
   return (
     <>
-      {experienceList.map(
+      {projectsList.map(
         ({
           id,
           symbol,

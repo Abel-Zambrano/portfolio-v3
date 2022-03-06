@@ -10,7 +10,7 @@ const projectsList = [
     github: "https://github.com/Abel-Zambrano/papertoshi",
     tech: ["React", "Redux", "Styled-Components", "TypeScript"],
     summary:
-      "Papertoshi is a cyrpto trading simulator. It was inspired by stock trading simulators also known as “Paper Trading.” Papertoshi was designed for informative purposes by providing current data of a crypto market, so that a user may practice trading crypto without financial risk.",
+      "Papertoshi is a cyrpto trading simulator. It was inspired by stock trading simulators better known as “Paper Trading.” Papertoshi is designed for informative purposes by providing current crypto market data so that a user may practice trading crypto without financial risk.",
     contributions: [
       "Create an up to date market price list using the coingecko API",
       "Develop reusable componets, DRY code",

@@ -17,11 +17,12 @@ const Wrapper = styled.div`
 type Props = {
   title: string;
   children: any;
+  id: string;
 };
 
-export default function Gallery({ title, children }: Props) {
+export default function Gallery({ id, title, children }: Props) {
   return (
-    <MyGallery>
+    <MyGallery id={id}>
       <Content title={title}>
         <Wrapper>{children}</Wrapper>
       </Content>

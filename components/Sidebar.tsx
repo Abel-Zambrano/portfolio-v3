@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import links from "../JS/links";
+import Link from "next/link";
 
 const MySidebar = styled.div`
   display: flex;
@@ -123,7 +124,11 @@ export default function Sidebar() {
         </SocialLinks>
         <LinkList>
           {links.map(({ id, name, url }) => {
-            return <LinkItem key={id}>{name}</LinkItem>;
+            return (
+              <Link href={url}>
+                <LinkItem key={id}>{name}</LinkItem>
+              </Link>
+            );
           })}
         </LinkList>
       </LinksSection>

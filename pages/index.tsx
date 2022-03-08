@@ -15,10 +15,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       <About />
-      <Gallery title="Experience">
+      <Gallery id="experience" title="Experience">
         <Experience />
       </Gallery>
-      <Gallery title="Projects">
+      <Gallery id="projects" title="Projects">
         <Projects />
       </Gallery>
     </Page>

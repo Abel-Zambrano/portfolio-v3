@@ -7,13 +7,14 @@ const MyContent = styled.div`
 `;
 
 type Props = {
+  className?: any;
   children: any;
   title: string;
 };
 
-export default function Content({ children, title }: Props) {
+export default function Content({ className, children, title }: Props) {
   return (
-    <MyContent>
+    <MyContent className={className}>
       <Title title={title} />
       {children}
     </MyContent>

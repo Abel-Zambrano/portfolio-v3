@@ -5,6 +5,7 @@ import Gallery from "../components/Gallery";
 import Page from "../components/Page";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Gallery id="projects" title="Projects">
         <Projects />
       </Gallery>
+      <Contact />
     </Page>
   );
 };

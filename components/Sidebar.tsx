@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import Image from "next/image";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import links from "../JS/links";
 import Link from "next/link";
+import SocialLinks from "./SocialLinks";
 
 const MySidebar = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
+  min-width: 300px;
   height: 100%;
   background-color: var(--sidebar-bg);
 `;
@@ -46,32 +47,6 @@ const LinksSection = styled.div`
   align-items: center;
   height: 300px;
   margin-top: 40px;
-`;
-
-const SocialLinks = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 50%;
-
-  .icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary);
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-
-    .linkedin {
-      font-size: 2rem;
-      color: var(--sidebar-bg);
-    }
-  }
-
-  .github {
-    font-size: 3.5rem;
-    color: var(--primary);
-  }
 `;
 
 const LinkList = styled.ul`
@@ -116,12 +91,7 @@ export default function Sidebar() {
         </About>
       </AboutSection>
       <LinksSection>
-        <SocialLinks>
-          <div className="icon-wrapper">
-            <FaLinkedinIn className="linkedin" />
-          </div>
-          <FaGithub className="github" />
-        </SocialLinks>
+        <SocialLinks />
         <LinkList>
           {links.map(({ id, name, url }) => {
             return (

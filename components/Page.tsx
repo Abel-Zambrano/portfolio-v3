@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from "styled-components";
-import Sidebar from "../components/Sidebar";
 
 const GlobalStyles = createGlobalStyle`
     :root {
@@ -70,7 +69,6 @@ export default function Page({ children }: Props) {
     <>
       <GlobalStyles />
       <MyPage>
-        <Sidebar />
         <PageColumn>{children}</PageColumn>
       </MyPage>
     </>

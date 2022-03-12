@@ -14,20 +14,30 @@ const MySocialLinks = styled.div`
     border-radius: 50%;
     height: 35px;
     width: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+    :hover {
+      transform: scale(1.2);
+    }
 
     .linkedin {
       font-size: 2rem;
-      color: var(--sidebar-bg);
+      color: var(--page-bg);
     }
     .paper-plane {
       font-size: 1.8rem;
-      color: var(--sidebar-bg);
+      color: var(--page-bg);
     }
   }
 
   .github {
     font-size: 3.5rem;
     color: var(--primary);
+    cursor: pointer;
+    transition: 0.2s;
+    :hover {
+      transform: scale(1.2);
+    }
   }
 `;
 
@@ -35,12 +45,19 @@ export default function SocialLinks() {
   return (
     <MySocialLinks>
       <div className="icon-wrapper">
-        <FaPaperPlane className="paper-plane" />
+        <a href="mailto:azambrano1417@gmail.com">
+          <FaPaperPlane className="paper-plane" />
+        </a>
       </div>
+
       <div className="icon-wrapper">
-        <FaLinkedinIn className="linkedin" />
+        <a href="https://www.linkedin.com/in/abel-zambrano/" target="_blank">
+          <FaLinkedinIn className="linkedin" />
+        </a>
       </div>
-      <FaGithub className="github" />
+      <a href="https://github.com/Abel-Zambrano" target="_blank">
+        <FaGithub className="github" />
+      </a>
     </MySocialLinks>
   );
 }

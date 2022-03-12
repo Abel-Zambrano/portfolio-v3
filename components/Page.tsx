@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const GlobalStyles = createGlobalStyle`
     :root {
@@ -47,13 +49,8 @@ const GlobalStyles = createGlobalStyle`
 
 const MyPage = styled.div`
   display: flex;
-  width: 100vw;
-  height: 100vh;
-`;
-
-const PageColumn = styled.div`
-  display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: var(--page-bg);
@@ -69,7 +66,9 @@ export default function Page({ children }: Props) {
     <>
       <GlobalStyles />
       <MyPage>
-        <PageColumn>{children}</PageColumn>
+        <NavBar />
+        {children}
+        <Footer />
       </MyPage>
     </>
   );

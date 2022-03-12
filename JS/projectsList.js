@@ -14,7 +14,7 @@ const projectsList = [
     contributions: [
       "Create an up to date market price list using the coingecko API",
       "Develop reusable componets, DRY code",
-      "Establish a trading platform that uses Redux for accurate transactions of dollar values and coin assets",
+      "Establish a trading platform that uses Redux for state management and JavaScript functions to execute accurate transactions of dollar values tide to each different crypto asset",
       "Website works across all platforms(desktop, tablet and mobile)",
       "In Progess: Connect trading platform to backend and provide user profiles",
     ],

@@ -19,7 +19,7 @@ const MySummary = styled(Summary)`
 export default function About() {
   return (
     <MyAbout id="about">
-      <Content title="about me">
+      <Content>
         <MySummary />
         <Knoweldge />
         <Skills />

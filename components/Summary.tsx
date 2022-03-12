@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image";
 
 const Wrapper = styled.div`
   display: flex;
@@ -60,6 +61,12 @@ export default function Summary({ className }: Props) {
           as a team contributer.
         </MySummary>
       </Column>
+      {/* <Image
+        src="https://res.cloudinary.com/dgbnqrc5j/image/upload/v1647103690/IMG_0437_rlbgmr.jpg"
+        alt="abel zambrano"
+        width={100}
+        height={300}
+      /> */}
       <Pic />
     </Wrapper>
   );

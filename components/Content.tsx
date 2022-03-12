@@ -9,7 +9,7 @@ const MyContent = styled.div`
 type Props = {
   className?: any;
   children: any;
-  title: string;
+  title?: string;
 };
 
 export default function Content({ className, children, title }: Props) {

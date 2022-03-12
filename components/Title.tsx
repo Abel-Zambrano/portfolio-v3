@@ -12,7 +12,7 @@ const MyTitle = styled.h2`
 `;
 
 type Props = {
-  title: string;
+  title?: string;
 };
 
 export default function Title({ title }: Props) {

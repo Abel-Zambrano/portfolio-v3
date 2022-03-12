@@ -6,7 +6,6 @@ const MyContact = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 1000px;
   margin-bottom: 200px;
 `;
 

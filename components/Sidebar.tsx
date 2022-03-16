@@ -10,7 +10,7 @@ const MySidebar = styled.div`
   width: 300px;
   min-width: 300px;
   height: 100%;
-  background-color: var(--sidebar-bg);
+  background-color: var(--lite-bg);
 `;
 
 const AboutSection = styled.div`

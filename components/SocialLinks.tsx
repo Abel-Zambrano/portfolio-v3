@@ -22,11 +22,11 @@ const MySocialLinks = styled.div`
 
     .linkedin {
       font-size: 2rem;
-      color: var(--page-bg);
+      color: var(--primary-bg);
     }
     .paper-plane {
       font-size: 1.8rem;
-      color: var(--page-bg);
+      color: var(--primary-bg);
     }
   }
 

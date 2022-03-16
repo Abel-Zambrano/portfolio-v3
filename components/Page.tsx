@@ -5,8 +5,9 @@ import Footer from "./Footer";
 const GlobalStyles = createGlobalStyle`
     :root {
         --primary: #00E600;
-        --sidebar-bg: #182434;
-        --page-bg: #111A26;
+        --lite-bg: #182434;
+        --primary-bg: #111A26;
+        --dark-bg: #1a1a1a;
         --text: #cdcbcb;
         --heading: #FFFFFF;
         --black: #000000;
@@ -53,7 +54,7 @@ const MyPage = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: var(--page-bg);
+  background-color: var(--primary-bg);
   overflow-x: hidden;
 `;
 

@@ -5,13 +5,16 @@ const MyGallery = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 400px;
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: var(--lite-bg);
+  padding: 50px 40px 100px 40px;
+  border-radius: 4px;
+  grid-column-gap: 30px;
 `;
 
 type Props = {

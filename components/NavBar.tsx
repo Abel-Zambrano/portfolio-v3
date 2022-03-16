@@ -6,7 +6,7 @@ import links from "../JS/links";
 const MyNavBar = styled.nav`
   display: flex;
   justify-content: center;
-  background-color: var(--sidebar-bg);
+  background-color: var(--lite-bg);
   height: 50px;
   width: 100%;
   position: fixed;
@@ -55,8 +55,8 @@ export default function NavBar() {
         <LinkList>
           {links.map(({ id, name, url }) => {
             return (
-              <Link href={url}>
-                <LinkItem key={id}>{name}</LinkItem>
+              <Link key={id} href={url}>
+                <LinkItem>{name}</LinkItem>
               </Link>
             );
           })}

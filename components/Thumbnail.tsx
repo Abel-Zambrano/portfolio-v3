@@ -10,6 +10,8 @@ const MyThumbnail = styled.div`
 `;
 
 const Wrapper = styled.div`
+  width: 350px;
+  height: 220px;
   transition: transform 0.3s;
   :hover {
     transform: scale(1.05);

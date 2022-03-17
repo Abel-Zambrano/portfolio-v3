@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: var(--lite-bg);
+  width: 1200px;
   padding: 50px 40px 100px 40px;
   border-radius: 4px;
   grid-column-gap: 30px;

@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
   height: 100px;
   width: 100%;
   text-align: center;
-  background-color: var(--color-jetblack);
+  background-color: var(--primary-bg);
   bottom: 0;
 `;
 

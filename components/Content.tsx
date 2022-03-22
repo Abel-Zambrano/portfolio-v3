@@ -13,10 +13,5 @@ type Props = {
 };
 
 export default function Content({ className, children, title }: Props) {
-  return (
-    <MyContent className={className}>
-      <Title title={title} />
-      {children}
-    </MyContent>
-  );
+  return <MyContent className={className}>{children}</MyContent>;
 }

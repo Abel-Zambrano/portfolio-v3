@@ -6,11 +6,12 @@ import links from "../JS/links";
 const MyNavBar = styled.nav`
   display: flex;
   justify-content: center;
+  position: fixed;
   background-color: var(--lite-bg);
   height: 50px;
   width: 100%;
-  position: fixed;
   z-index: 1000;
+  border-bottom: 1px solid var(--primary-bg);
 `;
 
 const Container = styled.div`
@@ -26,6 +27,7 @@ const Logo = styled.div`
   align-items: center;
   color: var(--primary);
   font-size: 3rem;
+  cursor: pointer;
 `;
 
 const LinkList = styled.ul`
@@ -49,9 +51,11 @@ export default function NavBar() {
   return (
     <MyNavBar>
       <Container>
-        <Logo>
-          <GiTriangleTarget />
-        </Logo>
+        <Link href="/">
+          <Logo>
+            <GiTriangleTarget />
+          </Logo>
+        </Link>
         <LinkList>
           {links.map(({ id, name, url }) => {
             return (

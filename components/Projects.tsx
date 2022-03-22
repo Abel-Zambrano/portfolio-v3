@@ -1,5 +1,5 @@
 import projectsList from "../JS/projectsList";
-import Cards from "./Cards";
+import Card from "./Card";
 
 export default function Projects() {
   return (
@@ -18,7 +18,7 @@ export default function Projects() {
           contributions,
         }) => {
           return (
-            <Cards
+            <Card
               key={id}
               id={id}
               symbol={symbol}

@@ -5,7 +5,6 @@ const MyGallery = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 400px;
 `;
 
 const Wrapper = styled.div`
@@ -26,8 +25,8 @@ type Props = {
 
 export default function Gallery({ id, title, children }: Props) {
   return (
-    <MyGallery id={id}>
-      <Content title={title}>
+    <MyGallery>
+      <Content id={id} title={title}>
         <Wrapper>{children}</Wrapper>
       </Content>
     </MyGallery>

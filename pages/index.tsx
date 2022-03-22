@@ -19,10 +19,10 @@ const Home: NextPage = () => {
       <Gallery id="experience" title="Experience">
         <Experience />
       </Gallery>
-      {/* <Gallery id="projects" title="Projects">
+      <Gallery id="projects" title="Projects">
         <Projects />
-      </Gallery> */}
-      {/* <Contact /> */}
+      </Gallery>
+      <Contact />
     </Page>
   );
 };

@@ -2,16 +2,23 @@ import styled from "styled-components";
 import Title from "./Title";
 
 const MyContent = styled.div`
-  width: 90%;
-  max-width: 1200px;
+  width: 1200px;
+  padding-top: 100px;
+  margin-bottom: 200px;
 `;
 
 type Props = {
   className?: any;
   children: any;
-  title?: string;
+  id: string;
+  title: string;
 };
 
-export default function Content({ className, children, title }: Props) {
-  return <MyContent className={className}>{children}</MyContent>;
+export default function Content({ className, children, id, title }: Props) {
+  return (
+    <MyContent id={id} className={className}>
+      <Title title={title} />
+      {children}
+    </MyContent>
+  );
 }

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Hr from "../components/Hr";
 
 const MyTitle = styled.h2`
   text-transform: capitalize;
@@ -6,14 +7,18 @@ const MyTitle = styled.h2`
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
-  padding: 14px;
-  height: 60px;
+  /* padding-top: 50px; */
 `;
 
 type Props = {
-  title?: string;
+  title: string;
 };
 
 export default function Title({ title }: Props) {
-  return <MyTitle>{title}</MyTitle>;
+  return (
+    <>
+      <MyTitle>{title}</MyTitle>
+      <Hr />
+    </>
+  );
 }

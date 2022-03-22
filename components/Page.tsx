@@ -56,7 +56,6 @@ const MyPage = styled.div`
   height: 100%;
   background-color: var(--primary-bg);
   overflow-x: hidden;
-  padding-top: 160px;
 `;
 
 type Props = {

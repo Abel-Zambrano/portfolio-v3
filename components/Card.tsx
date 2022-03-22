@@ -133,7 +133,7 @@ type Props = {
   contributions: string[];
 };
 
-export default function Cards({
+export default function Card({
   id,
   symbol,
   company,

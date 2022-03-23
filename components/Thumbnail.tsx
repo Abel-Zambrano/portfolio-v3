@@ -29,13 +29,14 @@ type Props = {
   location: string;
   image: string;
   symbol: string;
+  type: string;
 };
 
-export default function Thumbnail({ company, image, symbol }: Props) {
+export default function Thumbnail({ type, company, image, symbol }: Props) {
   return (
     <MyThumbnail>
       <Title>{company}</Title>
-      <Link href="/experience/[symbol]" as={`/experience/${symbol}`}>
+      <Link href={`/${type}/[symbol]`} as={`/${type}/${symbol}`}>
         <Wrapper>
           <Image
             src={image}

@@ -4,7 +4,7 @@ import Thumbnail from "./Thumbnail";
 export default function Projects() {
   return (
     <>
-      {projectList.map(({ id, company, image, location, symbol }) => {
+      {projectList.map(({ id, company, image, location, symbol, type }) => {
         return (
           <Thumbnail
             key={id}
@@ -12,6 +12,7 @@ export default function Projects() {
             image={image}
             location={location}
             symbol={symbol}
+            type={type}
           />
         );
       })}

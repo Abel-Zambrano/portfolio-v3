@@ -1,6 +1,7 @@
 const experienceList = [
   {
     id: 1,
+    type: "experience",
     symbol: "hfla",
     company: "Hack for LA",
     image:
@@ -21,6 +22,7 @@ const experienceList = [
   },
   {
     id: 2,
+    type: "experience",
     symbol: "aovfe",
     company: "Army of Volunteers for Earth",
     image:
@@ -41,6 +43,7 @@ const experienceList = [
   },
   {
     id: 3,
+    type: "experience",
     symbol: "anjs",
     company: "AN Janitorial Services",
     image:

@@ -1,6 +1,7 @@
 const projectList = [
   {
     id: 1,
+    type: "project",
     symbol: "toshi",
     company: "Papertoshi",
     image:

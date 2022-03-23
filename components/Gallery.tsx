@@ -10,11 +10,11 @@ const MyGallery = styled.div`
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
   background-color: var(--lite-bg);
-  width: 1200px;
-  padding: 50px 40px 100px 40px;
+  /* width: 2000px; */
+  padding: 50px 0px 100px 0px;
   border-radius: 4px;
-  grid-column-gap: 30px;
 `;
 
 type Props = {

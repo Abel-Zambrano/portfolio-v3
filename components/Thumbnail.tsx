@@ -7,12 +7,14 @@ const MyThumbnail = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 10px 0 10px;
 `;
 
 const Wrapper = styled.div`
   width: 350px;
   height: 220px;
   transition: transform 0.3s;
+  cursor: pointer;
   :hover {
     transform: scale(1.05);
   }

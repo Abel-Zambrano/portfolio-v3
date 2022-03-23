@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Page from "../../components/Page";
 import Card from "../../components/Card";
 import { useRouter } from "next/router";
-import experienceList from "../../JS/experienceList";
+import projectList from "../../JS/projectList";
 
 const MyInfo = styled.div`
   padding-top: 160px;
@@ -11,9 +11,7 @@ const MyInfo = styled.div`
 export default function Symbol() {
   const router = useRouter();
   const { symbol } = router.query;
-  const result = experienceList.filter(
-    (experience) => experience.symbol === symbol
-  );
+  const result = projectList.filter((project) => project.symbol === symbol);
 
   console.log(result);
 

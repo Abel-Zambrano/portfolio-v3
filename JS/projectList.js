@@ -1,4 +1,4 @@
-const projectsList = [
+const projectList = [
   {
     id: 1,
     symbol: "toshi",
@@ -21,4 +21,4 @@ const projectsList = [
   },
 ];
 
-export default projectsList;
+export default projectList;

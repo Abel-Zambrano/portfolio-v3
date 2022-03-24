@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { GiTriangleTarget } from "react-icons/gi";
 import Link from "next/link";
 import links from "../JS/links";
+import Hamburger from "./Hamburger";
+import { device } from "../JS/device";
 
 const MyNavBar = styled.nav`
   display: flex;
@@ -17,9 +19,8 @@ const MyNavBar = styled.nav`
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 1200px;
   height: 100%;
-  max-width: 1200px;
 `;
 
 const Logo = styled.div`
@@ -28,11 +29,19 @@ const Logo = styled.div`
   color: var(--primary);
   font-size: 3rem;
   cursor: pointer;
+  margin-left: 40px;
+  @media ${device.tablet} {
+    margin-left: 20px;
+  }
 `;
 
 const LinkList = styled.ul`
   display: flex;
   align-items: center;
+  margin-right: 40px;
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 
 const LinkItem = styled.li`
@@ -51,11 +60,12 @@ export default function NavBar() {
   return (
     <MyNavBar>
       <Container>
-        <Link href="/">
-          <Logo>
+        <Logo>
+          {" "}
+          <Link href="/">
             <GiTriangleTarget />
-          </Logo>
-        </Link>
+          </Link>
+        </Logo>
         <LinkList>
           {links.map(({ id, name, url }) => {
             return (
@@ -65,6 +75,7 @@ export default function NavBar() {
             );
           })}
         </LinkList>
+        <Hamburger />
       </Container>
     </MyNavBar>
   );

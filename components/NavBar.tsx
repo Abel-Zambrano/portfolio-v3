@@ -4,6 +4,7 @@ import Link from "next/link";
 import links from "../JS/links";
 import Hamburger from "./Hamburger";
 import { device } from "../JS/device";
+import NavDrawer from "./NavDrawer";
 
 const MyNavBar = styled.nav`
   display: flex;
@@ -77,6 +78,7 @@ export default function NavBar() {
         </LinkList>
         <Hamburger />
       </Container>
+      <NavDrawer />
     </MyNavBar>
   );
 }

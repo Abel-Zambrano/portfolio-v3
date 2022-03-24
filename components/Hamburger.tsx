@@ -3,7 +3,11 @@ import { useState } from "react";
 import { device } from "../JS/device";
 
 const Wrapper = styled.div`
+  display: none;
   cursor: pointer;
+  @media ${device.tablet} {
+    display: block;
+  }
 `;
 
 const MyMobileMenuButton = styled.div`

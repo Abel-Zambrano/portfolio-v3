@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react";
 import { GiTriangleTarget } from "react-icons/gi";
 import Link from "next/link";
 import links from "../JS/links";
@@ -58,6 +59,12 @@ const LinkItem = styled.li`
 `;
 
 export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
+  // const openHandler = () => {
+  //   setOpen(!open);
+  // };
+
   return (
     <MyNavBar>
       <Container>
@@ -76,7 +83,7 @@ export default function NavBar() {
             );
           })}
         </LinkList>
-        <Hamburger />
+        <Hamburger open={open} setOpen={setOpen} />
       </Container>
       <NavDrawer />
     </MyNavBar>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useState } from "react";
 import { device } from "../JS/device";
 
 const Wrapper = styled.div`
@@ -81,15 +80,14 @@ const MyMobileMenuButton = styled.div`
   }
 `;
 
-export default function MobileMenuButton() {
-  const [open, setOpen] = useState(false);
+type Props = {
+  open: boolean;
+  setOpen: any;
+};
 
-  const openHandler = () => {
-    setOpen(!open);
-  };
-
+export default function MobileMenuButton({ open, setOpen }: Props) {
   return (
-    <Wrapper onClick={openHandler}>
+    <Wrapper onClick={() => setOpen(!open)}>
       <MyMobileMenuButton id="nav-icon1" className={`${open ? "open" : ""}`}>
         <span></span>
         <span></span>

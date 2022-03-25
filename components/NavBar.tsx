@@ -85,7 +85,7 @@ export default function NavBar() {
         </LinkList>
         <Hamburger open={open} setOpen={setOpen} />
       </Container>
-      <NavDrawer />
+      <NavDrawer open={open} />
     </MyNavBar>
   );
 }

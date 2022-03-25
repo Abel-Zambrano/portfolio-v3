@@ -4,19 +4,24 @@ import links from "../JS/links";
 import Link from "next/link";
 
 const MyNavDrawer = styled.div`
-  display: none;
-  @media ${device.tablet} {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: calc(100vh - 50px);
-    z-index: 1000;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    color: white;
-    background-color: var(--lite-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: calc(100vh - 50px);
+  z-index: 1000;
+  position: absolute;
+  color: white;
+  background-color: var(--lite-bg);
+  top: 50px;
+  right: -500px;
+  transition: right 0.2s ease-in-out;
+
+  &.open {
+    @media ${device.tablet} {
+      top: 50px;
+      right: 0;
+    }
   }
 `;
 
@@ -35,9 +40,13 @@ const ListItem = styled.li`
   cursor: pointer;
 `;
 
-export default function NavDrawer() {
+type Props = {
+  open: boolean;
+};
+
+export default function NavDrawer({ open }: Props) {
   return (
-    <MyNavDrawer>
+    <MyNavDrawer className={`${open ? "open" : ""}`}>
       <List>
         {links.map(({ id, name, url }) => {
           return (

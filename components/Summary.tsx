@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import Image from "next/image";
+import { device } from "../JS/device";
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  @media ${device.tablet} {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Column = styled.div`
@@ -12,6 +17,11 @@ const Column = styled.div`
 `;
 
 const Intro = styled.div`
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .name {
     margin-bottom: 4px;
   }
@@ -31,6 +41,10 @@ const MySummary = styled.p`
   font-size: 1.4rem;
   color: var(--text);
   line-height: 20px;
+  @media ${device.phone} {
+    width: 300px;
+    margin-bottom: 100px;
+  }
 `;
 
 // todo: remove, this is a placeholder
@@ -38,6 +52,10 @@ const Pic = styled.div`
   background-color: gray;
   width: 400px;
   height: 300px;
+  @media ${device.phone} {
+    width: 300px;
+    height: 200px;
+  }
 `;
 
 type Props = {

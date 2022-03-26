@@ -41,9 +41,11 @@ const MySummary = styled.p`
   font-size: 1.4rem;
   color: var(--text);
   line-height: 20px;
+  @media ${device.tablet} {
+    margin-bottom: 100px;
+  }
   @media ${device.phone} {
     width: 300px;
-    margin-bottom: 100px;
   }
 `;
 

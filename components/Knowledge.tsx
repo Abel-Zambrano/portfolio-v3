@@ -1,13 +1,21 @@
 import styled from "styled-components";
 import Heading from "./Heading";
+import { device } from "../JS/device";
 
 const MyKnowledge = styled.div`
   display: flex;
   flex-direction: column;
+  width: 700px;
+  @media ${device.phone} {
+    width: 300px;
+  }
 `;
 
 const Text = styled.p`
   width: 800px;
+  @media ${device.phone} {
+    width: 300px;
+  }
 `;
 
 export default function Knoweldge() {

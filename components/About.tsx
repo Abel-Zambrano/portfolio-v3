@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Content from "./Content";
-import Knoweldge from "./Knowledge";
+import Knowledge from "./Knowledge";
 import Skills from "./Skills";
 import Summary from "./Summary";
 
@@ -13,7 +13,7 @@ export default function About() {
     <>
       <Content id="about" title="About Me">
         <MySummary />
-        <Knoweldge />
+        <Knowledge />
         <Skills />
       </Content>
     </>

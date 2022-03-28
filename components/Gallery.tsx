@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Content from "./Content";
+import { device } from "../JS/device";
 
 const MyGallery = styled.div`
   display: flex;
@@ -12,9 +13,11 @@ const Wrapper = styled.div`
   grid-template-columns: auto auto auto;
   justify-content: center;
   background-color: var(--lite-bg);
-  /* width: 2000px; */
   padding: 50px 0px 100px 0px;
   border-radius: 4px;
+  @media ${device.tablet} {
+    grid-template-columns: auto;
+  }
 `;
 
 type Props = {

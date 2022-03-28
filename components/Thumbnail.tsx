@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
+import { device } from "../JS/device";
 
 const MyThumbnail = styled.div`
   display: flex;
@@ -8,6 +9,9 @@ const MyThumbnail = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 10px 0 10px;
+  @media ${device.tablet} {
+    margin-top: 100px;
+  }
 `;
 
 const Wrapper = styled.div`

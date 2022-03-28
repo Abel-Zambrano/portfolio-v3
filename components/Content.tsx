@@ -21,7 +21,7 @@ const MyContent = styled.div`
 type Props = {
   className?: any;
   children: any;
-  id: string;
+  id?: string;
   title: string;
 };
 

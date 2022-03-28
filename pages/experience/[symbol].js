@@ -3,9 +3,16 @@ import Page from "../../components/Page";
 import Card from "../../components/Card";
 import { useRouter } from "next/router";
 import experienceList from "../../JS/experienceList";
+import { device } from "../../JS/device";
 
 const MyInfo = styled.div`
   padding-top: 160px;
+  @media ${device.tablet} {
+    width: 700px;
+  }
+  @media ${device.phone} {
+    width: 300px;
+  }
 `;
 
 export default function Symbol() {

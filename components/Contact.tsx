@@ -7,7 +7,6 @@ const MyContact = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 200px;
 `;
 
 const MyContent = styled(Content)`

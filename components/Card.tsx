@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import { FiGithub, FiExternalLink, FiChevronRight } from "react-icons/fi";
 import SubHeading from "./SubHeading";
+import { device } from "../JS/device";
 
 const MyCards = styled.div`
   margin-bottom: 200px;
@@ -15,7 +16,7 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 500px;
+      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -27,7 +28,7 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 500px;
+      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -39,7 +40,7 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 500px;
+      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -51,7 +52,7 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 500px;
+      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -77,6 +78,12 @@ const Summary = styled.div`
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 20px 10px 20px 10px;
+  @media ${device.tablet} {
+    width: 700px;
+  }
+  @media ${device.phone} {
+    width: 300px;
+  }
 `;
 
 const About = styled.p``;

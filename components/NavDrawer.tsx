@@ -42,16 +42,17 @@ const ListItem = styled.li`
 
 type Props = {
   open: boolean;
+  setOpen: any;
 };
 
-export default function NavDrawer({ open }: Props) {
+export default function NavDrawer({ open, setOpen }: Props) {
   return (
     <MyNavDrawer className={`${open ? "open" : ""}`}>
       <List>
         {links.map(({ id, name, url }) => {
           return (
             <Link key={id} href={url}>
-              <ListItem>{name}</ListItem>
+              <ListItem onClick={() => setOpen(!open)}>{name}</ListItem>
             </Link>
           );
         })}

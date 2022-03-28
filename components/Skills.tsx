@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Heading from "./Heading";
 import skills from "../JS/skills";
-import Image from "next/image";
+import { device } from "../JS/device";
 
 const MySkills = styled.div``;
 
@@ -10,6 +10,10 @@ const List = styled.ul`
   grid-template-columns: auto auto auto auto auto auto auto;
   width: 100%;
   height: 200px;
+  @media ${device.phone} {
+    height: auto;
+    grid-template-columns: auto auto;
+  }
 `;
 
 const IconWrapper = styled.li`
@@ -19,6 +23,9 @@ const IconWrapper = styled.li`
   align-items: center;
   list-style: none;
   font-size: 4rem;
+  @media ${device.phone} {
+    margin-top: 60px;
+  }
 
   .name {
     color: var(--heading);

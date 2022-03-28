@@ -13,6 +13,9 @@ const MyKnowledge = styled.div`
 
 const Text = styled.p`
   width: 800px;
+  @media ${device.tablet} {
+    width: 700px;
+  }
   @media ${device.phone} {
     width: 300px;
   }

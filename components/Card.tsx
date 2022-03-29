@@ -168,7 +168,7 @@ export default function Card({
       <Summary>
         <About>{summary}</About>
         <SubHeading text="What I did" />
-        {contributions.map((contribtution, i) => {
+        {contributions?.map((contribtution, i) => {
           return (
             <Contribution key={i}>
               <div className="right-arrow">
@@ -180,7 +180,7 @@ export default function Card({
         })}
       </Summary>
       <TechList>
-        {tech.map((e, i) => {
+        {tech?.map((e, i) => {
           return (
             <p key={i} className="tech">
               {e}

@@ -23,6 +23,7 @@ const IconWrapper = styled.li`
   align-items: center;
   list-style: none;
   font-size: 4rem;
+  width: 150px;
   @media ${device.phone} {
     margin-top: 60px;
   }

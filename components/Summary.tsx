@@ -27,7 +27,7 @@ const Intro = styled.div`
   }
 
   .title {
-    color: var(--text);
+    color: var(--primary);
     margin-bottom: 50px;
   }
 `;

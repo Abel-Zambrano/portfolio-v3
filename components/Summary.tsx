@@ -96,6 +96,7 @@ export default function Summary({ className }: Props) {
             width={280}
             height={300}
             objectFit="cover"
+            priority
           />
         </ImageWrapper>
         <Pic />

@@ -16,7 +16,6 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -28,7 +27,6 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -40,7 +38,6 @@ const Company = styled.h2`
       content: "";
       display: block;
       position: relative;
-      min-width: 100px;
       height: 2px;
       background-color: var(--primary);
       top: -11px;
@@ -162,6 +159,7 @@ export default function Card({
           width={800}
           height={500}
           alt={company}
+          priority
         />
       </ImageWrapper>
       <City>{location}</City>

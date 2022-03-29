@@ -49,6 +49,7 @@ export default function Thumbnail({ type, company, image, symbol }: Props) {
             alt="Picture of the author"
             width={350}
             height={220}
+            priority
           />
         </Wrapper>
       </Link>

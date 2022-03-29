@@ -156,7 +156,13 @@ export default function Card({
     <MyCards key={id}>
       <Company className={symbol}>{company}</Company>
       <ImageWrapper>
-        <Image className="my-image" src={image} width={800} height={500} />
+        <Image
+          className="my-image"
+          src={image}
+          width={800}
+          height={500}
+          alt={company}
+        />
       </ImageWrapper>
       <City>{location}</City>
       <Summary>
@@ -183,11 +189,23 @@ export default function Card({
         })}
       </TechList>
       <WebLinks>
-        <a className="link" href={url} title="visit website" target="_blank">
+        <a
+          className="link"
+          href={url}
+          title="visit website"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FiExternalLink />
         </a>
         {github !== null ? (
-          <a className="link" href={github} title="see code" target="_blank">
+          <a
+            className="link"
+            href={github}
+            title="see code"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiGithub />
           </a>
         ) : null}

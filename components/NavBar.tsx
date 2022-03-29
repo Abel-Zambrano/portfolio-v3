@@ -66,14 +66,14 @@ export default function NavBar() {
       <Container>
         <Logo>
           {" "}
-          <Link href="/">
+          <Link href="/" passHref>
             <GiTriangleTarget />
           </Link>
         </Logo>
         <LinkList>
           {links.map(({ id, name, url }) => {
             return (
-              <Link key={id} href={url}>
+              <Link key={id} href={url} passHref>
                 <LinkItem>{name}</LinkItem>
               </Link>
             );

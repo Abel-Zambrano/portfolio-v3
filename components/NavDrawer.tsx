@@ -51,7 +51,7 @@ export default function NavDrawer({ open, setOpen }: Props) {
       <List>
         {links.map(({ id, name, url }) => {
           return (
-            <Link key={id} href={url}>
+            <Link key={id} href={url} passHref>
               <ListItem onClick={() => setOpen(!open)}>{name}</ListItem>
             </Link>
           );

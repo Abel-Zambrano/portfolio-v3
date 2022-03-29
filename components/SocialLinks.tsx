@@ -51,11 +51,19 @@ export default function SocialLinks() {
       </div>
 
       <div className="icon-wrapper">
-        <a href="https://www.linkedin.com/in/abel-zambrano/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/abel-zambrano/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <FaLinkedinIn className="linkedin" />
         </a>
       </div>
-      <a href="https://github.com/Abel-Zambrano" target="_blank">
+      <a
+        href="https://github.com/Abel-Zambrano"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FaGithub className="github" />
       </a>
     </MySocialLinks>

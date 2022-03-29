@@ -42,7 +42,7 @@ export default function Thumbnail({ type, company, image, symbol }: Props) {
   return (
     <MyThumbnail>
       <Title>{company}</Title>
-      <Link href={`/${type}/[symbol]`} as={`/${type}/${symbol}`}>
+      <Link href={`/${type}/[symbol]`} as={`/${type}/${symbol}`} passHref>
         <Wrapper>
           <Image
             src={image}

@@ -61,10 +61,6 @@ const LinkItem = styled.li`
 export default function NavBar() {
   const [open, setOpen] = useState(false);
 
-  // const openHandler = () => {
-  //   setOpen(!open);
-  // };
-
   return (
     <MyNavBar>
       <Container>

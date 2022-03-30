@@ -11,10 +11,10 @@ const experienceList = [
     github: "https://github.com/Abel-Zambrano/website",
     tech: ["JavaScript", "Jekyll", "Docker", "SASS", "HTML", "CSS"],
     summary:
-      "Hack for LA is volunteer organization that builds digital products, programs and services with community partners and local government to address issues in the Los Angeles region.",
+      "Hack for LA is a volunteer organization that builds digital products, programs and services with community partners and local government to address issues in the Los Angeles region.",
     contributions: [
-      "Develop a JavaScript parser to update a search filter header with the proper title due to a conflict with parsed HTML attributes had spaces, resulting in saved time from redeveloping an entire dynamic page",
-      "Restructured website layout so that all pages have a fixed footer position to the bottom of the page and to have a consisted look for the page footer no matter the width of the page (all breakpoints)",
+      "Develop a JavaScript parser to update a search filter header due to confilicting parsed HTML attributes having spaces, resulting in saved time from redeveloping an entire dynamic page",
+      "Restructured website layout so that all pages have a fixed footer position to the bottom of the page and all pages have a consisted look at all breakpoints",
       "Review Pull Requests by providing solutions and assure changes are correct",
       "Convert Figma designs into pixel-perfect HTML and CSS",
       "Improved website mobile view by making changes with SASS variables",
@@ -32,7 +32,7 @@ const experienceList = [
     github: null,
     tech: ["Wordpress", "Elementor", "Google Forms", "HTML", "CSS"],
     summary:
-      "Army of Volunteers for Earth is non-profit organization that operates worldwide. Their mission is to combat climate change and develop a global marketing network for climate friendly products and technologies.",
+      "Army of Volunteers for Earth is a non-profit organization that operates worldwide. Their mission is to combat climate change and develop a global marketing network for climate friendly products and technologies.",
     contributions: [
       "Improved website UI design by coding HTML and CSS edits to meet deadlines",
       "Added Kanban for project tracking and agile development",
@@ -53,7 +53,7 @@ const experienceList = [
     github: "https://github.com/Abel-Zambrano/an-janitorial-service",
     tech: ["React", "JavaScript", "EmailJS", "SASS", "HTML", "CSS"],
     summary:
-      "AN Janitorial Service is a private owned businees that services the San Francisco Bay Area region. They provide janitorial servies in the resedinetal and commerial sector.",
+      "AN Janitorial Service is a private owned business that services the San Francisco Bay Area region. They provide janitorial services in the residential and commercial sector.",
     contributions: [
       "Develop an email form using emailjs, completed forms are submitted directly to owner",
       "Improved site speed performance by using Gatsby Image component",

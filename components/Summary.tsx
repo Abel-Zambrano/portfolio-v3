@@ -82,7 +82,7 @@ export default function Summary({ className }: Props) {
         <MySummary>
           I’m a frontend developer that specializes in TypeScript, React and
           Redux. I have a BS degree in Information Technology Management and
-          enjoy building complex and sacalable applications. I have worked for 2
+          enjoy building complex and scalable applications. I have worked for 2
           non-profits, <Green>Hack for LA</Green> and{" "}
           <Green>Army of Volunteers for Earth</Green>, which has helped me grow
           as a team contributer.

@@ -9,10 +9,15 @@ const List = styled.ul`
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  @media ${device.tablet} {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 60px;
+  }
   @media ${device.phone} {
     height: auto;
     grid-template-columns: auto auto;
+    grid-column-gap: 0;
   }
 `;
 
@@ -23,10 +28,8 @@ const IconWrapper = styled.li`
   align-items: center;
   list-style: none;
   font-size: 4rem;
-  @media ${device.phone} {
-    margin-top: 60px;
-    width: 150px;
-  }
+  margin-top: 60px;
+  width: 150px;
 
   .name {
     color: var(--heading);

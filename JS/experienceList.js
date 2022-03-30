@@ -13,7 +13,7 @@ const experienceList = [
     summary:
       "Hack for LA is a volunteer organization that builds digital products, programs and services with community partners and local government to address issues in the Los Angeles region.",
     contributions: [
-      "Develop a JavaScript parser to update a search filter header due to confilicting parsed HTML attributes having spaces, resulting in saved time from redeveloping an entire dynamic page",
+      "Develop a JavaScript parser to update a search filter header due to conflicting parsed HTML attributes having spaces, resulting in saved time from redeveloping an entire dynamic page",
       "Restructured website layout so that all pages have a fixed footer position to the bottom of the page and all pages have a consisted look at all breakpoints",
       "Review Pull Requests by providing solutions and assure changes are correct",
       "Convert Figma designs into pixel-perfect HTML and CSS",

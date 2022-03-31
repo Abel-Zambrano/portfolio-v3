@@ -159,6 +159,8 @@ export default function Card({
           width={800}
           height={500}
           alt={company}
+          placeholder="blur"
+          blurDataURL={image}
           priority
         />
       </ImageWrapper>

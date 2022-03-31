@@ -96,6 +96,8 @@ export default function Summary({ className }: Props) {
             width={280}
             height={300}
             objectFit="cover"
+            placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/dgbnqrc5j/image/upload/v1647103690/IMG_0437_rlbgmr.jpg"
             priority
           />
         </ImageWrapper>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Image from "next/image";
 import { device } from "../JS/device";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   display: flex;
@@ -67,42 +68,57 @@ const Pic = styled.div`
   border-radius: 4px;
   margin-left: -250px;
 `;
+
+const variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 1,
+    },
+  },
+};
+
 type Props = {
   className?: string;
 };
 
 export default function Summary({ className }: Props) {
   return (
-    <Wrapper className={className}>
-      <Column>
-        <Intro>
-          <h1 className="name">Abel Zambrano</h1>
-          <h2 className="title">Frontend Developer</h2>
-        </Intro>
-        <MySummary>
-          I’m a frontend developer that specializes in TypeScript, React and
-          Redux. I have a BS degree in Information Technology Management and
-          enjoy building complex and scalable applications. I have worked for 2
-          non-profits, <Green>Hack for LA</Green> and{" "}
-          <Green>Army of Volunteers for Earth</Green>, which has helped me grow
-          as a team contributer.
-        </MySummary>
-      </Column>
-      <Container>
-        <ImageWrapper>
-          <Image
-            src="https://res.cloudinary.com/dgbnqrc5j/image/upload/v1647103690/IMG_0437_rlbgmr.jpg"
-            alt="abel zambrano"
-            width={280}
-            height={300}
-            objectFit="cover"
-            placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/dgbnqrc5j/image/upload/v1647103690/IMG_0437_rlbgmr.jpg"
-            priority
-          />
-        </ImageWrapper>
-        <Pic />
-      </Container>
-    </Wrapper>
+    <motion.div initial="hidden" animate="visible" variants={variants}>
+      <Wrapper className={className}>
+        <Column>
+          <Intro>
+            <h1 className="name">Abel Zambrano</h1>
+            <h2 className="title">Frontend Developer</h2>
+          </Intro>
+          <MySummary>
+            I’m a frontend developer that specializes in TypeScript, React and
+            Redux. I have a BS degree in Information Technology Management and
+            enjoy building complex and scalable applications. I have worked for
+            2 non-profits, <Green>Hack for LA</Green> and{" "}
+            <Green>Army of Volunteers for Earth</Green>, which has helped me
+            grow as a team contributer.
+          </MySummary>
+        </Column>
+        <Container>
+          <ImageWrapper>
+            <Image
+              src="https://res.cloudinary.com/dgbnqrc5j/image/upload/v1647103690/IMG_0437_rlbgmr.jpg"
+              alt="abel zambrano"
+              width={280}
+              height={300}
+              objectFit="cover"
+              placeholder="blur"
+              blurDataURL="https://res.cloudinary.com/dgbnqrc5j/image/upload/v1647103690/IMG_0437_rlbgmr.jpg"
+              priority
+            />
+          </ImageWrapper>
+          <Pic />
+        </Container>
+      </Wrapper>
+    </motion.div>
   );
 }

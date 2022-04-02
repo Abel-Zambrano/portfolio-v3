@@ -8,13 +8,14 @@ import links from "../JS/links";
 import Hamburger from "./Hamburger";
 import { device } from "../JS/device";
 import Drawer from "./Drawer";
+import { motion } from "framer-motion";
 
 const MyHeader = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
   background-color: var(--primary-bg);
-  height: 50px;
+  height: 60px;
   width: 100%;
   z-index: 1000;
 `;
@@ -59,6 +60,18 @@ const LinkItem = styled.li`
   }
 `;
 
+const variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.4,
+    },
+  },
+};
+
 export default function Header() {
   const router = useRouter();
   const path = router.pathname;
@@ -71,7 +84,9 @@ export default function Header() {
         {/* controls home btn scroll and link route depending on page */}
         {path === "/" ? (
           <Logo onClick={() => scroll.scrollToTop()}>
-            <GiTriangleTarget />
+            <motion.div initial="hidden" animate="visible" variants={variants}>
+              <GiTriangleTarget />
+            </motion.div>
           </Logo>
         ) : (
           <Link href="/" passHref>
@@ -86,7 +101,13 @@ export default function Header() {
               <>
                 {path === "/" ? (
                   <SmoothLink key={id} to={url} smooth={true}>
-                    <LinkItem>{name}</LinkItem>
+                    <motion.div
+                      initial="hidden"
+                      animate="visible"
+                      variants={variants}
+                    >
+                      <LinkItem>{name}</LinkItem>
+                    </motion.div>
                   </SmoothLink>
                 ) : (
                   <Link key={id} href={`/#${url}`}>

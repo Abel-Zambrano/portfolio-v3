@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { GiTriangleTarget } from "react-icons/gi";
+import { useRouter } from "next/router";
+import { Link as SmoothLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
 import links from "../JS/links";
 import Hamburger from "./Hamburger";
 import { device } from "../JS/device";
-import NavDrawer from "./NavDrawer";
+import Drawer from "./Drawer";
 
-const MyNavBar = styled.nav`
+const MyHeader = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
@@ -58,30 +60,47 @@ const LinkItem = styled.li`
   }
 `;
 
-export default function NavBar() {
+export default function Header() {
+  const router = useRouter();
+  const path = router.pathname;
+
   const [open, setOpen] = useState(false);
 
   return (
-    <MyNavBar>
+    <MyHeader>
       <Container>
-        <Logo>
-          {" "}
-          <Link href="/" passHref>
+        {/* controls home btn scroll and link route depending on page */}
+        {path === "/" ? (
+          <Logo onClick={() => scroll.scrollToTop()}>
             <GiTriangleTarget />
+          </Logo>
+        ) : (
+          <Link href="/" passHref>
+            <Logo onClick={() => scroll.scrollToTop()}>
+              <GiTriangleTarget />
+            </Logo>
           </Link>
-        </Logo>
+        )}
         <LinkList>
           {links.map(({ id, name, url }) => {
             return (
-              <Link key={id} href={url} passHref>
-                <LinkItem>{name}</LinkItem>
-              </Link>
+              <>
+                {path === "/" ? (
+                  <SmoothLink key={id} to={url} smooth={true}>
+                    <LinkItem>{name}</LinkItem>
+                  </SmoothLink>
+                ) : (
+                  <Link href={`/#${url}`}>
+                    <LinkItem>{name}</LinkItem>
+                  </Link>
+                )}
+              </>
             );
           })}
         </LinkList>
         <Hamburger open={open} setOpen={setOpen} />
       </Container>
-      <NavDrawer open={open} setOpen={setOpen} />
-    </MyNavBar>
+      <Drawer open={open} setOpen={setOpen} />
+    </MyHeader>
   );
 }

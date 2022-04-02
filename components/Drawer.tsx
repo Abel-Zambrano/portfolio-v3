@@ -3,7 +3,7 @@ import { device } from "../JS/device";
 import links from "../JS/links";
 import Link from "next/link";
 
-const MyNavDrawer = styled.div`
+const MyDrawer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,9 +45,9 @@ type Props = {
   setOpen: any;
 };
 
-export default function NavDrawer({ open, setOpen }: Props) {
+export default function Drawer({ open, setOpen }: Props) {
   return (
-    <MyNavDrawer className={`${open ? "open" : ""}`}>
+    <MyDrawer className={`${open ? "open" : ""}`}>
       <List>
         {links.map(({ id, name, url }) => {
           return (
@@ -57,6 +57,6 @@ export default function NavDrawer({ open, setOpen }: Props) {
           );
         })}
       </List>
-    </MyNavDrawer>
+    </MyDrawer>
   );
 }

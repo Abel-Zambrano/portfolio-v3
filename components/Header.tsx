@@ -90,7 +90,7 @@ export default function Header() {
                     <LinkItem>{name}</LinkItem>
                   </SmoothLink>
                 ) : (
-                  <Link href={`/#${url}`}>
+                  <Link key={id} href={`/#${url}`}>
                     <LinkItem>{name}</LinkItem>
                   </Link>
                 )}

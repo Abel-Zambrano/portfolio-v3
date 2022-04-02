@@ -51,7 +51,7 @@ export default function Thumbnail({ type, company, image, symbol }: Props) {
             height={220}
             placeholder="blur"
             blurDataURL={image}
-            priority
+            priority={true}
           />
         </Wrapper>
       </Link>

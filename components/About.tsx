@@ -1,8 +1,11 @@
 import styled from "styled-components";
-import Content from "./Content";
 import Knowledge from "./Knowledge";
 import Skills from "./Skills";
 import Summary from "./Summary";
+
+const MyAbout = styled.div`
+  padding-top: 200px;
+`;
 
 const MySummary = styled(Summary)`
   margin-bottom: 20px;
@@ -11,11 +14,11 @@ const MySummary = styled(Summary)`
 export default function About() {
   return (
     <>
-      <Content id="about" title="About Me">
+      <MyAbout id="about">
         <MySummary />
         <Knowledge />
         <Skills />
-      </Content>
+      </MyAbout>
     </>
   );
 }

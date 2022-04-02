@@ -70,7 +70,7 @@ const City = styled.h2`
 `;
 
 const Summary = styled.div`
-  background-color: var(--sidebar-bg);
+  background-color: var(--lite-bg);
   width: 800px;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -92,9 +92,10 @@ const Contribution = styled.div`
   .right-arrow {
     display: flex;
     align-items: flex-start;
-    padding-top: 3px;
+    padding-top: 0;
     color: var(--primary);
     margin-right: 10px;
+    font-size: 2rem;
   }
 `;
 
@@ -102,11 +103,11 @@ const TechList = styled.li`
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  color: var(--heading);
   margin-bottom: 20px;
 
   .tech {
     margin-left: 10px;
+    color: var(--primary);
   }
 `;
 

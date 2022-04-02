@@ -4,11 +4,10 @@ import Footer from "./Footer";
 
 const GlobalStyles = createGlobalStyle`
     :root {
-        --primary: #00E600;
-        --lite-bg: #182434;
-        --primary-bg: #111A26;
-        --dark-bg: #1a1a1a;
-        --text: #cdcbcb;
+        --primary: #1499d2;
+        --lite-bg: #323432;
+        --primary-bg: #212221;
+        --text: #FFFFFF;
         --heading: #FFFFFF;
         --black: #000000;
 

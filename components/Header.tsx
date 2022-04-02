@@ -13,11 +13,10 @@ const MyHeader = styled.nav`
   display: flex;
   justify-content: center;
   position: fixed;
-  background-color: var(--lite-bg);
+  background-color: var(--primary-bg);
   height: 50px;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid var(--primary-bg);
 `;
 
 const Container = styled.div`

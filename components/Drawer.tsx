@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { useRouter } from "next/router";
 import { device } from "../JS/device";
 import links from "../JS/links";
 import Link from "next/link";
+import { Link as SmoothLink } from "react-scroll";
 
 const MyDrawer = styled.div`
   display: flex;
@@ -46,14 +48,25 @@ type Props = {
 };
 
 export default function Drawer({ open, setOpen }: Props) {
+  const router = useRouter();
+  const path = router.pathname;
+
   return (
     <MyDrawer className={`${open ? "open" : ""}`}>
       <List>
         {links.map(({ id, name, url }) => {
           return (
-            <Link key={id} href={url} passHref>
-              <ListItem onClick={() => setOpen(!open)}>{name}</ListItem>
-            </Link>
+            <>
+              {path === "/" ? (
+                <SmoothLink key={id} to={url} smooth={true}>
+                  <ListItem onClick={() => setOpen(!open)}>{name}</ListItem>
+                </SmoothLink>
+              ) : (
+                <Link key={id} href={`/#${url}`} passHref>
+                  <ListItem onClick={() => setOpen(!open)}>{name}</ListItem>
+                </Link>
+              )}
+            </>
           );
         })}
       </List>

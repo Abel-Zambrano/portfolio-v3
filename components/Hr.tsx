@@ -6,7 +6,7 @@ const MyHr = styled.hr`
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0),
-    rgba(20, 153, 210, 0.75),
+    rgba(22, 170, 233, 0.75),
     rgba(0, 0, 0, 0)
   );
   margin-bottom: 100px;

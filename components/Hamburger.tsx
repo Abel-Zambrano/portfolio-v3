@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../JS/device";
+import { motion } from "framer-motion";
 
 const Wrapper = styled.div`
   display: none;
@@ -80,6 +81,18 @@ const MyMobileMenuButton = styled.div`
   }
 `;
 
+const variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.4,
+    },
+  },
+};
+
 type Props = {
   open: boolean;
   setOpen: any;
@@ -88,11 +101,13 @@ type Props = {
 export default function MobileMenuButton({ open, setOpen }: Props) {
   return (
     <Wrapper onClick={() => setOpen(!open)}>
-      <MyMobileMenuButton id="nav-icon1" className={`${open ? "open" : ""}`}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </MyMobileMenuButton>
+      <motion.div initial="hidden" animate="visible" variants={variants}>
+        <MyMobileMenuButton id="nav-icon1" className={`${open ? "open" : ""}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </MyMobileMenuButton>
+      </motion.div>
     </Wrapper>
   );
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { GiTriangleTarget } from "react-icons/gi";
+import { FiTriangle } from "react-icons/fi";
 import { useRouter } from "next/router";
 import { Link as SmoothLink, animateScroll as scroll } from "react-scroll";
 import Link from "next/link";
@@ -35,6 +35,7 @@ const Logo = styled.div`
   cursor: pointer;
   margin-left: 40px;
   @media ${device.tablet} {
+    font-size: 3.5rem;
     margin-left: 20px;
   }
 `;
@@ -85,13 +86,13 @@ export default function Header() {
         {path === "/" ? (
           <Logo onClick={() => scroll.scrollToTop()}>
             <motion.div initial="hidden" animate="visible" variants={variants}>
-              <GiTriangleTarget />
+              <FiTriangle />
             </motion.div>
           </Logo>
         ) : (
           <Link href="/" passHref>
             <Logo onClick={() => scroll.scrollToTop()}>
-              <GiTriangleTarget />
+              <FiTriangle />
             </Logo>
           </Link>
         )}

@@ -33,7 +33,7 @@ const MyMobileMenuButton = styled.div`
     &#nav-icon1 span {
       display: block;
       position: absolute;
-      height: 2px;
+      height: 2.7px;
       width: 100%;
       background: var(--heading);
       border-radius: 4px;

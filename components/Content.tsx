@@ -14,7 +14,6 @@ const MyContent = styled.div`
   @media ${device.phone} {
     display: flex;
     flex-direction: column;
-    width: 300px;
   }
 `;
 

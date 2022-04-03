@@ -17,6 +17,8 @@ const MyThumbnail = styled.div`
 const Wrapper = styled.div`
   width: 350px;
   height: 220px;
+  border-radius: 4px;
+  overflow: hidden;
   transition: transform 0.3s;
   cursor: pointer;
   :hover {

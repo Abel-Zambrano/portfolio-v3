@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 const MyAbout = styled.div`
   padding-top: 200px;
+  margin-bottom: 200px;
 `;
 
 const MySummary = styled(Summary)`

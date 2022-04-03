@@ -102,8 +102,13 @@ const Contribution = styled.div`
 const TechList = styled.li`
   display: flex;
   justify-content: flex-end;
+  /* background-color: brown; */
   list-style: none;
   margin-bottom: 20px;
+  @media ${device.phone} {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
   .tech {
     margin-left: 10px;

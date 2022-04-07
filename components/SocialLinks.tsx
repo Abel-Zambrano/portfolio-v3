@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { FaPaperPlane, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { device } from "../JS/device";
 
 const MySocialLinks = styled.div`
   display: flex;
@@ -28,6 +29,11 @@ const MySocialLinks = styled.div`
       font-size: 1.8rem;
       color: var(--primary-bg);
     }
+    @media ${device.tablet} {
+      :hover {
+        transform: none;
+      }
+    }
   }
 
   .github {
@@ -37,6 +43,11 @@ const MySocialLinks = styled.div`
     transition: 0.2s;
     :hover {
       transform: scale(1.2);
+    }
+    @media ${device.tablet} {
+      :hover {
+        transform: none;
+      }
     }
   }
 `;

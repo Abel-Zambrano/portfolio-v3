@@ -24,6 +24,11 @@ const Wrapper = styled.div`
   :hover {
     transform: scale(1.05);
   }
+  @media ${device.tablet} {
+    :hover {
+      transform: none;
+    }
+  }
 `;
 
 const Title = styled.h2`

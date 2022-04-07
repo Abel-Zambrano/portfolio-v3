@@ -26,7 +26,7 @@ export default function Knoweldge() {
     <MyKnowledge>
       <Heading text="What I Do" />
       <Text>
-        I have over 1.5 years experience building dynamic and responsive web
+        I have over 2 years experience building dynamic and responsive web
         applications. The technologies I enjoy using the most are React,
         Typescript and Redux. Below are my skills and technologies that I’ve
         worked with.

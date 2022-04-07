@@ -33,7 +33,7 @@ const List = styled.ul`
   height: 200px;
   justify-content: space-evenly;
   list-style: none;
-  color: var(--heading);
+  color: var(--primary);
   text-transform: capitalize;
   font-size: 1.6rem;
 `;

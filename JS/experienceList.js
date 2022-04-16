@@ -58,7 +58,7 @@ const experienceList = [
       "Develop an email form using emailjs, completed forms are submitted directly to owner",
       "Improved site speed performance by using Gatsby Image component",
       "Redeveloped website styling with best practice. Converted CSS to SASS to reduce 20% of front-end styling code",
-      "Created reusable code and used JavaScript map method to display content from arrays",
+      "Created reusable code and used JavaScript map method to display contents from arrays",
     ],
   },
 ];
